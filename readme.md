@@ -1,35 +1,59 @@
-![Gulp Logo](https://upload.wikimedia.org/wikipedia/commons/7/72/Gulp.js_Logo.svg)
+<h1 align="center">Welcome to Gulp Sass & BrowserSync 👋</h1>
+<p>
+  <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
+  <a href="https://github.com/TomBost-web/Gulp-Sass-BrowserSync#readme" target="_blank">
+    <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
+  </a>
+  <a href="https://github.com/TomBost-web/Gulp-Sass-BrowserSync/graphs/commit-activity" target="_blank">
+    <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" />
+  </a>
+  <a href="https://github.com/TomBost-web/Gulp-Sass-BrowserSync/blob/master/LICENSE" target="_blank">
+    <img alt="License: ISC" src="https://img.shields.io/github/license/Tom\_Bost/Gulp Sass & BrowserSync" />
+  </a>
+</p>
 
-# gulpfile.js example :tropical_drink:
+> Simple example how to use Gulp compile Sass and Live Preview with Browser Sync
 
-## Simple gulp task runner project setup
+### 🏠 [Homepage](https://github.com/TomBost-web/Gulp-Sass-BrowserSync#readme)
 
-This gulpfile contains the following functions:
+## Install
 
-- :heavy_check_mark: [Browser-Sync](https://www.npmjs.com/package/browser-sync): Automatically reload browser on file changes
-- :heavy_check_mark: [Gulp-SASS](https://www.npmjs.com/package/gulp-sass): Compile SASS to CSS
-- :heavy_check_mark: [Minify](https://www.npmjs.com/package/minify): Minify JS files
+```sh
+npm install gulp -g
+```
 
-## Tasks :runner:
+## Usage
 
-- **default**: Run functions from above and watch for file changes
-- **build**: Minify, compile and copy every file into dist/
+```sh
+npm install gulp --save-dev
+```
 
-## Get started
+## Run tests
 
-Requirements:
-- :heavy_check_mark: [NPM (Node)](https://nodejs.org/en/) installed
-- :heavy_check_mark: [Gulp-CLI](https://gulpjs.com/) installed
+```sh
+npm install sass gulp-sass --save-dev
+```
 
-1. Clone project:
-   * `> git clone e.js-example.git`
-  
-2. Navigate into project:
-   * `> cd project`
-  
-3. Install dependencies:
-   * `> npm install`
-  
-4. Run Gulp tasks
-   * `> gulp`
+## Author
 
+👤 **Tom Bost**
+
+* Website: Tom_Bost
+* Github: [@Tom\_Bost](https://github.com/Tom\_Bost)
+* LinkedIn: [@https:\/\/www.linkedin.com\/in\/tombost\/](https://linkedin.com/in/https:\/\/www.linkedin.com\/in\/tombost\/)
+
+## 🤝 Contributing
+
+Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/TomBost-web/Gulp-Sass-BrowserSync). You can also take a look at the [contributing guide](https://github.com/TomBost-web/Gulp-Sass-BrowserSync/blob/master/CONTRIBUTING.md).
+
+## Show your support
+
+Give a ⭐️ if this project helped you!
+
+## 📝 License
+
+Copyright © 2021 [Tom Bost](https://github.com/Tom\_Bost).<br />
+This project is [ISC](https://github.com/TomBost-web/Gulp-Sass-BrowserSync/blob/master/LICENSE) licensed.
+
+***
+_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
