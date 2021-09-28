@@ -1,0 +1,26 @@
+{
+  "name": "gulp-sass-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TomBost-web/Gulp-Sass-BrowserSync"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TomBost-web/Gulp-Sass-BrowserSync"
+  },
+  "homepage": "https://github.com/TomBost-web/Gulp-Sass-BrowserSync#readme",
+  "devDependencies": {
+    "browser-sync": "^2.27.5",
+    "gulp": "^4.0.2",
+    "gulp-connect-php": "^1.0.3",
+    "gulp-sass": "^5.0.0",
+    "sass": "^1.42.1"
+  }
+}
