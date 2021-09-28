@@ -1,3 +1,9 @@
+<p align="center"> 
+<a href="https://gulpjs.com" rel="nofollow">
+    <img height="257" width="114" src="https://raw.githubusercontent.com/gulpjs/artwork/master/gulp-2x.png" style="max-width: 100%;">
+  </a>
+</p>
+  
 <h1 align="center">Welcome to Gulp Sass & BrowserSync 👋</h1>
 <p>
   <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
@@ -14,26 +20,38 @@
 
 > Simple example how to use Gulp compile Sass and Live Preview with Browser Sync
 
-### 🏠 [Homepage](https://github.com/TomBost-web/Gulp-Sass-BrowserSync#readme)
+## Two Function Gulp:
 
-## Install
+  - ✔️ [Browser-Sync](https://www.npmjs.com/package/browser-sync): Automatically reload browser on file changes
+  - ✔️ [Gulp-SASS](https://www.npmjs.com/package/gulp-sass): Compile SASS to CSS </li>
 
-```sh
-npm install gulp -g
-```
+## Get started
 
-## Usage
+Requirements:
+- :heavy_check_mark: [NPM (Node)](https://nodejs.org/en/) installed
+- :heavy_check_mark: [Gulp-CLI](https://gulpjs.com/) installed
 
-```sh
-npm install gulp --save-dev
-```
+## U haven't Gulp-CLI
+  ```sh
+  > npm install --global gulp-cli
+  ```
+# Install Gulp.js in your project folder
 
-## Run tests
+ Install all dependency in root project folder
 
-```sh
-npm install sass gulp-sass --save-dev
-```
+  ```sh
+  > npm install gulp sass --save-dev
 
+  > npm install sass gulp-sass --save-dev
+
+  > npm install browser-sync --save-dev
+  ```
+ # Run Gulp tasks
+ 
+  ```sh
+  > gulp 
+  ```
+  
 ## Author
 
 👤 **Tom Bost**
@@ -46,14 +64,10 @@ npm install sass gulp-sass --save-dev
 
 Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/TomBost-web/Gulp-Sass-BrowserSync). You can also take a look at the [contributing guide](https://github.com/TomBost-web/Gulp-Sass-BrowserSync/blob/master/CONTRIBUTING.md).
 
-## Show your support
-
-Give a ⭐️ if this project helped you!
-
 ## 📝 License
 
 Copyright © 2021 [Tom Bost](https://github.com/Tom\_Bost).<br />
 This project is [ISC](https://github.com/TomBost-web/Gulp-Sass-BrowserSync/blob/master/LICENSE) licensed.
 
 ***
-_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
+_This README was created with the ❤️
