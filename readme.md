@@ -40,6 +40,8 @@ Requirements:
  Install all dependency in root project folder
 
   ```sh
+  > npm install gulp --save-dev
+  
   > npm install gulp sass --save-dev
 
   > npm install sass gulp-sass --save-dev
