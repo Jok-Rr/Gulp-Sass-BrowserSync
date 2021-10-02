@@ -1,44 +1,62 @@
+//!!!  REQUIRE  !!!\\ 
+
 var gulp = require('gulp');
 var sass = require('gulp-sass')(require('sass'));
-var browsersync = require('browser-sync').create();
+var phpConnect = require('gulp-connect-php');
+const browsersync = require("browser-sync");
 
-//! PATH FILE SASS && CSS
+//!!!  CONFIG FILE SASS, CSS, PHP, OUTPUT STYLE  !!!\\ 
 
-var sassDir = 'assets/sass/*.scss';
+var sassDir = 'assets/scss/*.scss'; 
 var cssDir = 'assets/css';
+var phpDir = '*.php';
+var htmlDir = '*.html';
+var baseDir = './';
+var proxyDir = 'localhost/Gulp-Sass-BrowserSync/';
+var outputstyle = "compressed"; //! "nested", "expanded", "compact", "compressed"
+
+//!!!  PHP CONNECT  !!!\\
+
+function connectsync() {
+  phpConnect.server({
+      keepalive: true,
+      base: baseDir
+  }, function (){
+      browsersync({
+          proxy: proxyDir
+      });
+  });
+}
+
+//! BROWSER RELOAD
+
+function browserSyncReload(done) {
+  browsersync.reload();
+  done();
+}
+
+function php(){
+  return gulp.src(phpDir);
+}
+
+//! COMPILE SCSS TO CSS
 
 function scssTask() {
   return gulp.src(sassDir)
-  .pipe(sass({outputStyle:'compressed'}).on('error',sass.logError))
+  .pipe(sass({outputStyle: outputstyle}).on('error',sass.logError))
     .pipe(gulp.dest(cssDir))
 };
 
-function browsersyncServe(cb){
-  browsersync.init({
-    server: {
-      baseDir: '.',
-      proxy: 'localhost/files-web/gulp-sass-example/',
-        browser: 'chrome',
-        files: [
-            "css/*.css", "*.html", "js/*.js"
-        ]
-    }
-  });
-  cb();
+//! WATCH MODIFICATIONS FILES
+
+function watchFiles() {
+  gulp.watch(phpDir, gulp.series(php, browserSyncReload));
+  gulp.watch(htmlDir, gulp.series(browserSyncReload));
+  gulp.watch(sassDir, gulp.series(scssTask, browserSyncReload));
 }
 
-function browsersyncReload(cb){
-  browsersync.reload();
-  cb();
-}
+//! DEFAULT TASK FOR START SCRIPT "gulp"
 
-function watchTask(){
-  gulp.watch('*.html', browsersyncReload);
-  gulp.watch(sassDir, gulp.series(scssTask, browsersyncReload));
-}
+const watch = gulp.parallel(scssTask, [watchFiles, connectsync]);
 
-exports.default = gulp.series(
-  scssTask,
-  browsersyncServe,
-  watchTask
-);
+exports.default = watch;
