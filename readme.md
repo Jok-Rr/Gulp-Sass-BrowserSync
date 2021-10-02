@@ -3,7 +3,7 @@
     <img height="257" width="114" src="https://raw.githubusercontent.com/gulpjs/artwork/master/gulp-2x.png" style="max-width: 100%;">
   </a>
 </p>
-  
+
 <h1 align="center">Welcome to Gulp Sass + BrowserSync + Php COnnect 👋</h1>
 <p>
   <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
